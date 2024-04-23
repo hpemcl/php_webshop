@@ -28,3 +28,9 @@ body {
 }
 
 
+.btn-hover:hover{
+    background-color: white;
+    color: black;
+}
+
+

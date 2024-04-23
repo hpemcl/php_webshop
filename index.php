@@ -84,9 +84,39 @@
             <div class="col-md-10 px-3">
                 <!-- products -->    
                 <div class="row">
+
+                <!-- fetching products - php -->
+                <?php
+                    $select_query="Select * from `products`";
+                    $result_query=mysqli_query($con,$select_query);
+                    //$row=mysqli_fetch_assoc($result_query);
+                    //echo $row['product_title'];
+                    while($row=mysqli_fetch_assoc($result_query)){
+                        $product_id=$row['product_id'];
+                        $product_title=$row['product_title'];
+                        $product_description=$row['product_description'];
+                        $product_keywords=$row['product_keywords'];
+                        $product_image1=$row['product_image1'];
+                        $product_price=$row['product_price'];
+                        $category_id=$row['category_id'];
+                        $brand_id=$row['brand_id'];
+                        echo "<div class='col-md-4 mb-4'>
+                        <div class='card' >
+                            <img src='./admin-area/product_images/$product_image1' class='card-img-top'>
+                            <div class='card-body'>
+                                <h5 class='card-title'>$product_title</h5>
+                                <p class='card-text'>$product_description</p>
+                                <a href='#' class='btn btn-dark'>Add to Cart</a>
+                                <a href='#' class='btn btn-outline-dark'>View more</a>
+                            </div>
+                        </div>
+                    </div>";
+                    }
+                ?>
+                <!--
                     <div class="col-md-4 mb-4 ">
                         <div class="card" >
-                            <img src="./images/printed_white_t-shirt.png" class="card-img-top" alt="...">
+                            <img src="./images/printed_white_t-shirt.png" class="card-img-top" alt="printed white t-shirt">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -95,94 +125,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/printed_beige'_t-shirt.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/printed_darkbeige_t-shirt.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/blue_jeans.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/darkblue_jeans.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/lightblue_jeans.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/printed_beige_hoodie.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/printed_dark_hoodie.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card" >
-                            <img src="./images/printed_darkblue_hoodie.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-dark">Add to Cart</a>
-                                <a href="#" class="btn btn-outline-dark">View more</a>
-                            </div>
-                        </div>
-                    </div>
+                -->
+                    
                 </div>
             </div>
             
@@ -210,7 +154,7 @@
                             $brand_title = $row_data['brand_title'];
                             $brand_id = $row_data['brand_id'];
                             echo " <li class='nav-item mb-2'>
-                            <a href='index.php?brand=$brand_id' class='nav-link fw-bold'>$brand_title</a>
+                            <a href='index.php?brand=$brand_title' class='nav-link fw-bold'>$brand_title</a>
                         </li>";
                         }
                     ?>
@@ -235,7 +179,7 @@
                             $category_title = $row_data['category_title'];
                             $category_id = $row_data['category_id'];
                             echo " <li class='nav-item rounded-2 mt-2'>
-                            <a href='index.php?category=$category_id' class='nav-link fw-bold'>$category_title</a>
+                            <a href='index.php?category=$category_title' class='nav-link fw-bold'>$category_title</a>
                         </li>";
                         }
                     ?>

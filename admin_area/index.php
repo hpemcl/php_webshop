@@ -43,13 +43,13 @@
         <div class="row">
             <div class="col-md-12 bg-secondary p-1 d-flex align-items-start justify-content-center">
                 <div>
-                    <a href="#"><img src="../images/logo.png" class="admin_image" alt=""></a>
+                    <a href="#"><img src="../images/logo.png" class="admin_image" alt="logo"></a>
                     <p class="text-black text-left ms-2"> Admin Name</p>
                 </div>
                
                 <div class="button text-center pt-5">
                     <button class="text-light bg-black rounded-3">
-                        <a href="" class="nav-link  m-1 p-1">Insert Products</a>
+                        <a href="insert_product.php" class="nav-link  m-1 p-1">Insert Products</a>
                     </button>
                     <button class="text-light bg-black rounded-3">
                         <a href="" class="nav-link m-1 p-1">View Products</a>

@@ -1,6 +1,6 @@
 <?php
     // Opret forbindelse til databasen
-    $con = mysqli_connect('localhost', 'root', 'Hent5fisk!', 'mystore');
+    $con = mysqli_connect('localhost', 'root', '', 'mystore');
 
     // Tjek forbindelsen
     if (!$con) {

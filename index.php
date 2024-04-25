@@ -1,7 +1,7 @@
 <!-- php - connect file -->
 <?php
-    include('includes/connect.php');
-    include('functions\common-function.php');
+    include('./includes/connect.php');
+    include('./functions/common_function.php');
 ?>
 
 
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 
+  
 </head>
 <body>
     <!-- navbar -->
@@ -22,7 +23,9 @@
     
     <nav class="navbar navbar-expand-lg bg-success-subtle text-black">
         <div class="container-fluid">
-            <img src="./images/logo.png" alt="logo" class="logo">
+        <a width="0" href="index.php">
+            <img src="./images/logo.png" alt="logo" width="10%" height="10%">
+        </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -88,8 +91,8 @@
                 <?php
                 //calling function
                     getproducts();
-                    //get_unique_categories();
-                    //get_unique_brands();
+                    get_unique_categories();
+                    get_unique_brands();
                ?>
                     
                 </div>

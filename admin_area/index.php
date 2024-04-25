@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-md-12 bg-secondary p-1 d-flex align-items-start justify-content-center">
                 <div>
-                    <a href="#"><img src="../images/logo.png" class="admin_image" alt="logo"></a>
+                    <a href="../index.php"><img src="../images/logo.png" class="admin_image" alt="logo"></a>
                     <p class="text-black text-left ms-2"> Admin Name</p>
                 </div>
                

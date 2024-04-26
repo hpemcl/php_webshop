@@ -125,12 +125,7 @@
                                 echo "<option value='$brand_id' class='text-dark'>$brand_title</option>";
                             }
                         ?>
-                    <!--    
-                    <option value="">Brand1</option>
-                    <option value="">Brand2</option>
-                    <option value="">Brand3</option>
-                    <option value="">Brand4</option>
-                        -->
+
                 </select>
             </div>
 

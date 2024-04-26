@@ -8,11 +8,59 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body class="bg-success-subtle">
     <div class="container-fluid">
-        <h2 class="text-center">
-        
+        <h2 class="text-center text-uppercase fw-bold">
+        New User Registration 
         </h2>
+       <div class="row d-flex align-item-center justify-content-center">
+        <div class="lg-12 col-xl-6">
+            <form action="" method="post" enctype="multipart/form-data">
+                <!-- username -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="user_username" class="form-label fw-bold">Username</label>
+                    <input type="text" id="user_username" class="form-control" placeholder="Enter your username" required="required" name="user_username"/>
+                </div>
+
+                <!-- email field -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="user_email" class="form-label fw-bold">Email</label>
+                    <input type="text" id="user_email" class="form-control" placeholder="Enter your email" required="required"  name="user_email"/>
+                </div>
+
+                <!-- profile picture-->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="user_image" class="form-label fw-bold ">Profile picture</label>
+                    <input type="file" name="user_image" id="user_image" class="form-control"  required="required">
+                </div>
+
+                <!-- password -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="user_password" class="form-label fw-bold">Password</label>
+                    <input type="text" id="user_password" class="form-control" placeholder="Enter your email" required="required"  name="user_password"/>
+                </div>
+
+                <!-- password confirmed -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="conf_user_password" class="form-label fw-bold">Confirm password</label>
+                    <input type="text" id="conf_user_password" class="form-control" placeholder="Confirm password" required="required"  name="conf_user_password"/>
+                </div>
+
+                <!-- address -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="user_address" class="form-label fw-bold">Address</label>
+                    <input type="text" id="user_address" class="form-control" placeholder="Enter your address" required="required" name="user_address"/>
+                </div>
+
+                <!-- contact -->
+                <div class="form-outline mb-4 w-50 m-auto">
+                    <label for="user_contact" class="form-label fw-bold">Contact</label>
+                    <input type="text" id="user_contact" class="form-control" placeholder="Enter your contact" required="required" name="user_contact"/>
+                </div>
+            </form>
+
+        </div>
+       </div>
     </div>
 
 

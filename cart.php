@@ -170,7 +170,7 @@
                             echo "<div class='col-md-6 text-end'>
                             <h4 class='px-3'>Subtotal: <strong> $total_price kr.</strong></h4>
                             <input type='submit' value='Continue shopping' name='continue_shopping' class='btn btn-dark fw-bold text-light text-center border-0 px-3 py-2 '>
-                            <button class='btn btn-light btn-outline-dark px-3 py-2'><a href='checkout.php' class='text-dark text-decoration-none fw-bold'> Checkout </a></button>
+                            <button class='btn btn-light btn-outline-dark px-3 py-2'><a href='./users_area/checkout.php' class='text-dark text-decoration-none fw-bold'> Checkout </a></button>
                            
                         </div>";
                         }else{

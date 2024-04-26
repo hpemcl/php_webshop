@@ -36,7 +36,7 @@
                         <a class="nav-link" href="products.php">Products</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="./users_area/user_registration.php">Register</a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="#">Contact</a>
@@ -66,10 +66,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-danger-subtle">
         <ul class="navbar-nav me-auto text-black fw-bold">
             <li class="nav-item">
-                <a class="nav-link"  href="#">Welcome Guest</a>
+                <a class="nav-link"  href="./users_area/user_registration.php">Welcome Guest</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link"  href="#">Login</a>
+                <a class="nav-link"  href="./users_area/user_login.php">Login</a>
             </li>
         </ul>
     </nav>

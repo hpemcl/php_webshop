@@ -36,7 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="products.php">Products</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="./users_area/user_registration.php">Register</a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="#">Contact</a>

@@ -29,8 +29,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item fw-bold">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="index.php">Home</a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="products.php">Products</a>
@@ -42,13 +42,13 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php cart_item(); ?> </sup></a>
+                        <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><?php cart_item(); ?> </a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="#">Total Price: <?php  total_cart_price() ?> kr.</a>
                     </li>
                 </ul>
-            <form class="d-flex" action="search_product.php" method="get">
+            <form class="d-flex" action="" method="get">
                 <input class="form-control me-2 text-black" type="search" placeholder="Search for clothes" aria-label="Search" name="search_data">
                 <!-- <button class="btn btn-dark" type="submit">Search</button> -->
                 <input type="submit" value="Search" class="btn btn-dark" name="search_data_product">
@@ -58,10 +58,7 @@
         </div>
     </nav>
 
-    <!-- calling cart function -->
-    <?php
-    cart();
-    ?>
+
     <!-- 2nd child -->
     <nav class="navbar navbar-expand-lg navbar-light bg-danger-subtle">
         <ul class="navbar-nav me-auto text-black fw-bold">
@@ -93,11 +90,9 @@
                 <!-- fetching products - php -->
                 <?php
                 //calling function
-                    getproducts();
+                    search_product();
                     get_unique_categories();
                     get_unique_brands();
-                    /* $ip = getIPAddress();  
-                    echo 'User Real IP Address - '.$ip;  */
                ?>
                     
                 </div>
@@ -144,10 +139,10 @@
         </div>
     </div>
 
-<!-- footer--> 
-    <?php
-        include("./includes/footer.php");
-    ?>
+    <!-- footer--> 
+    <div class="bg-danger-subtle text-dark p-3 py-4 text-center">
+        <p> All rights reserved &copy; Designed by Hannah - 2024</p>
+    </div>
         
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

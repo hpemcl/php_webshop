@@ -9,6 +9,10 @@ body {
     box-sizing: 0;
 }
 
+.logo_fp{
+    height: 7% !important;
+    width: 7% !important;
+}
 
 .logo{
     height: 10%;
@@ -37,4 +41,7 @@ body {
     width: 40%;
     object-fit: contain;
 }
+
+
+
 

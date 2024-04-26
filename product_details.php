@@ -29,11 +29,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item fw-bold">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="index.php">Home</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="products.php">Products</a>
+                        <a class="nav-link active" aria-current="page" href="products.php">Products</a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="#">Register</a>
@@ -42,7 +42,7 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><sup><?php cart_item(); ?> </sup></a>
+                        <a class="nav-link" href="cart.php"><i class="fa-solid fa-cart-shopping"></i><?php cart_item(); ?> </a>
                     </li>
                     <li class="nav-item fw-bold">
                         <a class="nav-link" href="#">Total Price: <?php  total_cart_price() ?> kr.</a>
@@ -58,10 +58,7 @@
         </div>
     </nav>
 
-    <!-- calling cart function -->
-    <?php
-    cart();
-    ?>
+
     <!-- 2nd child -->
     <nav class="navbar navbar-expand-lg navbar-light bg-danger-subtle">
         <ul class="navbar-nav me-auto text-black fw-bold">
@@ -89,15 +86,12 @@
             <div class="col-md-10 px-3">
                 <!-- products -->    
                 <div class="row">
-
                 <!-- fetching products - php -->
                 <?php
                 //calling function
-                    getproducts();
+                    view_details();
                     get_unique_categories();
                     get_unique_brands();
-                    /* $ip = getIPAddress();  
-                    echo 'User Real IP Address - '.$ip;  */
                ?>
                     
                 </div>
